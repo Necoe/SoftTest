@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent">
+    <ImageView
+        android:id="@+id/song_pic"
+        android:src="@drawable/music0"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/song_pic"
+        app:layout_constraintLeft_toRightOf="@id/song_pic"
+        >
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="歌曲"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/song_enter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="+"
+            android:textSize="15dp"
+            android:gravity="center_horizontal"/>
+    </RelativeLayout>
+   </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
